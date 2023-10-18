@@ -1,0 +1,54 @@
+@startuml
+' Определение классов и интерфейсов
+class CalculatorPresenter {
+- CalculatorView calculatorView
+- CalculatorModel calculatorModel
++ void onCalculate(String operation, double a, double b)
++ void onClear()
+}
+
+class CalculatorModel {
++ double add(double a, double b)
++ double subtract(double a, double b)
++ double multiply(double a, double b)
++ double divide(double a, double b)
+}
+
+interface CalculatorView {
+~ void setObserver(ViewObserver)
+~ void updateResult(double result)
+~ void clearScreen()
+}
+
+class CalculatorViewImpl {
++ void setObserver(ViewObserver observer)
++ void updateResult(double result)
++ void clearScreen()
+}
+
+class MainProgram {
++ {static} void main(String[])
+}
+
+interface ViewObserver {
+~ void onCalculate(String operation, double a, double b)
+~ void onClear()
+}
+
+' Реализация интерфейсов
+CalculatorView <|-- CalculatorViewImpl
+ViewObserver <|.. CalculatorPresenter
+
+' Агрегация: CalculatorPresenter имеет ссылку на View и Model, но не владеет ими
+CalculatorPresenter o-- "0..1" CalculatorView : uses
+CalculatorPresenter o-- "0..1" CalculatorModel : uses
+
+' Зависимость: MainProgram зависит от ViewObserver и CalculatorViewImpl для выполнения
+'MainProgram ..> ViewObserver : initiates
+MainProgram ..> CalculatorViewImpl : creates
+MainProgram ..> CalculatorPresenter : creates
+
+' Ассоциация с мультипликатором: CalculatorView может иметь только один ViewObserver
+CalculatorView "0..1" -- "1" ViewObserver : updates
+
+@enduml
