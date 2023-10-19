@@ -1,0 +1,27 @@
+@startuml
+class seminar3Dz.Ocp.Rectangle {
+- double width
+- double height
++ double calculateArea()
+}
+class seminar3Dz.Ocp.Main {
++ {static} void main(String[])
+}
+interface seminar3Dz.Ocp.Shape {
+~ double calculateArea()
+}
+class seminar3Dz.Ocp.AreaCalculator {
++ {static} double calculateTotalArea(Shape[])
+}
+class seminar3Dz.Ocp.Circle {
+- double radius
++ double calculateArea()
+}
+
+seminar3Dz.Ocp.Main --> seminar3Dz.Ocp.Circle : creates
+seminar3Dz.Ocp.Main --> seminar3Dz.Ocp.Rectangle : creates
+seminar3Dz.Ocp.Main --> seminar3Dz.Ocp.AreaCalculator : initiates
+
+seminar3Dz.Ocp.Shape <|.. seminar3Dz.Ocp.Rectangle
+seminar3Dz.Ocp.Shape <|.. seminar3Dz.Ocp.Circle
+@enduml

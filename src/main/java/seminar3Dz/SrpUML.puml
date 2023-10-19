@@ -1,0 +1,15 @@
+@startuml
+class seminar3Dz.Srp.Calculator {
++ int add(int,int)
+}
+class seminar3Dz.Srp.Logger {
++ void log(String)
+}
+class seminar3Dz.Srp.Main {
++ {static} void main(String[])
+}
+
+seminar3Dz.Srp.Main--> seminar3Dz.Srp.Logger : creates
+seminar3Dz.Srp.Main--> seminar3Dz.Srp.Calculator : creates
+
+@enduml

@@ -1,0 +1,21 @@
+@startuml
+class seminar3Dz.Lsp.Main {
++ {static} void main(String[])
+}
+class seminar3Dz.Lsp.Rectangle {
+# int width
+# int height
++ void setWidth(int)
++ void setHeight(int)
++ int calculateArea()
+}
+class seminar3Dz.Lsp.Square {
++ void setWidth(int)
++ void setHeight(int)
+}
+
+seminar3Dz.Lsp.Main --> seminar3Dz.Lsp.Rectangle : uses
+seminar3Dz.Lsp.Main --> seminar3Dz.Lsp.Square : creates
+
+seminar3Dz.Lsp.Rectangle <|-- seminar3Dz.Lsp.Square
+@enduml

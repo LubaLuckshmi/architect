@@ -5,12 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92bb8378-df1f-45af-a6d4-671e8a182536" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/seminar3/exampleUml/CalculatorPresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/seminar3/exampleUml/CalculatorViewImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/seminar3/exampleUml/MainProgram.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/seminar3/test/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar3Dz/Lsp/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar3Dz/Lsp/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar3Dz/Lsp/Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar3Dz/Ocp/AreaCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar3Dz/Ocp/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar3Dz/Ocp/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar3Dz/Ocp/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar3Dz/Ocp/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar3Dz/Srp/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar3Dz/Srp/Logger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar3Dz/Srp/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/seminar2/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +26,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -53,19 +60,20 @@
       <recent name="seminar3.exampleUml" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/seminar3Dz/Ocp" />
+      <recent name="$PROJECT_DIR$/src/main/java/seminar3Dz/Srp" />
       <recent name="$PROJECT_DIR$/src/main/java/seminar3/exampleUml" />
       <recent name="$PROJECT_DIR$/src/main/java/seminar3" />
       <recent name="$PROJECT_DIR$/src/main/java/seminar1" />
-      <recent name="$PROJECT_DIR$/src/main/java/seminar1/test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.seminar3.test.Main">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="seminar2.prototype.Main" />
+      <option name="MAIN_CLASS_NAME" value="seminar3Dz.Lsp.Main" />
       <module name="arkhitect" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="seminar2.prototype.*" />
+          <option name="PATTERN" value="seminar3Dz.Lsp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -73,12 +81,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="seminar2.factory.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="seminar2.factory.Main" />
+    <configuration name="seminar3Dz.Ocp.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="seminar3Dz.Ocp.Main" />
       <module name="arkhitect" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="seminar2.factory.*" />
+          <option name="PATTERN" value="seminar3Dz.Ocp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -86,12 +94,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="seminar2.singleton.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="seminar2.singleton.Main" />
+    <configuration name="seminar3Dz.Srp.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="seminar3Dz.Srp.Main" />
       <module name="arkhitect" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="seminar2.singleton.*" />
+          <option name="PATTERN" value="seminar3Dz.Srp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.seminar3Dz.Ocp.Main" />
+        <item itemvalue="Application.seminar3Dz.Srp.Main" />
         <item itemvalue="Application.seminar3.test.Main" />
         <item itemvalue="Application.seminar3.Main" />
-        <item itemvalue="Application.seminar2.singleton.Main" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.seminar2.factory.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -143,7 +151,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1697526476058</updated>
-      <workItem from="1697526477381" duration="8880000" />
+      <workItem from="1697526477381" duration="13279000" />
     </task>
     <servers />
   </component>
