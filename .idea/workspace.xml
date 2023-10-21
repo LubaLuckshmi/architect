@@ -5,18 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92bb8378-df1f-45af-a6d4-671e8a182536" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/seminar3Dz/Lsp/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/seminar3Dz/Lsp/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/seminar3Dz/Lsp/Square.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/seminar3Dz/Ocp/AreaCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/seminar3Dz/Ocp/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/seminar3Dz/Ocp/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/seminar3Dz/Ocp/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/seminar3Dz/Ocp/Shape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/seminar3Dz/Srp/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/seminar3Dz/Srp/Logger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/seminar3Dz/Srp/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar4/onlineTicket/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,14 +49,14 @@
       <recent name="seminar3.exampleUml" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/seminar3Dz" />
       <recent name="$PROJECT_DIR$/src/main/java/seminar3Dz/Ocp" />
       <recent name="$PROJECT_DIR$/src/main/java/seminar3Dz/Srp" />
       <recent name="$PROJECT_DIR$/src/main/java/seminar3/exampleUml" />
       <recent name="$PROJECT_DIR$/src/main/java/seminar3" />
-      <recent name="$PROJECT_DIR$/src/main/java/seminar1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.seminar4.onlineTicket.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="seminar3Dz.Lsp.Main" />
       <module name="arkhitect" />
@@ -107,19 +96,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="seminar3.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="seminar3.Main" />
-      <module name="arkhitect" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="seminar3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="seminar3.test.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="seminar3.test.Main" />
       <module name="arkhitect" />
@@ -133,13 +109,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="seminar4.onlineTicket.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="seminar4.onlineTicket.Main" />
+      <module name="arkhitect" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="seminar4.onlineTicket.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.seminar4.onlineTicket.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.seminar3Dz.Ocp.Main" />
         <item itemvalue="Application.seminar3Dz.Srp.Main" />
         <item itemvalue="Application.seminar3.test.Main" />
-        <item itemvalue="Application.seminar3.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -151,7 +140,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1697526476058</updated>
-      <workItem from="1697526477381" duration="13279000" />
+      <workItem from="1697526477381" duration="14619000" />
     </task>
     <servers />
   </component>
