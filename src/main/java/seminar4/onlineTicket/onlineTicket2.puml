@@ -1,0 +1,100 @@
+@startuml
+class saleTicketOnline.ticket.BusTicket {
+- int routeId
+- int price
++ void setName(String)
++ void setSurname(String)
++ void setID(String)
+}
+class saleTicketOnline.view.ConsoleView {
+- OnlineShop shop
+- Scanner scanner
++ void run()
+}
+class saleTicketOnline.user.User {
+- String email
+- int balanse
+- boolean isAuthorized
+- String name
++ String getEmail()
++ String getName()
++ void setEmail(String)
++ void setAuthorized(boolean)
++ void setName(String)
++ boolean isAuthorized()
++ int getBalance()
++ void setBalance(int)
+}
+class saleTicketOnline.onlineShop.OnlineShop {
+~ TicketProviderActions ticketProvider
++ User createUser(String,String)
++ boolean checkFunds()
++ boolean confirmPurchase()
++ boolean deductFunds()
++ boolean authorize(String,String)
++ List<Ticket> getAvailableTickets(LocalDateTime,int)
++ boolean reserveTicket(Ticket)
++ boolean canselTicket(Ticket)
+}
+interface saleTicketOnline.ticket.TicketActions {
+~ void setName(String)
+~ void setSurname(String)
+~ void setID(String)
+}
+interface saleTicketOnline.ticketProvider.TicketProviderActions {
+~ List<Ticket> getAvailableTickets(LocalDateTime,int)
+~ boolean reserveTicket(Ticket)
+~ boolean canselTicket(Ticket)
+}
+abstract class saleTicketOnline.ticket.Ticket {
+# int ticketNumber
+# String name
+# String surname
+# String id
+# LocalDateTime departureTime
+}
+interface saleTicketOnline.view.IView {
+~ void run()
+}
+interface saleTicketOnline.user.UserActions {
+~ boolean isAuthorized()
+~ int getBalance()
+~ void setBalance(int)
+}
+class saleTicketOnline.ticketProvider.BusTicketProvider {
+- List<BusTicket> busTickets
++ List<Ticket> getAvailableTickets(LocalDateTime,int)
++ boolean reserveTicket(Ticket)
++ boolean canselTicket(Ticket)
+}
+class saleTicketOnline.Main {
++ {static} void main(String[])
+}
+interface saleTicketOnline.onlineShop.OnlineShopActions {
+~ User createUser(String,String)
+~ boolean checkFunds()
+~ boolean confirmPurchase()
+~ boolean deductFunds()
+~ boolean authorize(String,String)
+}
+
+
+saleTicketOnline.ticket.Ticket <|-- saleTicketOnline.ticket.BusTicket
+saleTicketOnline.view.IView <|.. saleTicketOnline.view.ConsoleView
+saleTicketOnline.user.UserActions <|.. saleTicketOnline.user.User
+saleTicketOnline.onlineShop.OnlineShopActions <|.. saleTicketOnline.onlineShop.OnlineShop
+saleTicketOnline.ticket.TicketActions <|.. saleTicketOnline.ticket.Ticket
+saleTicketOnline.ticketProvider.TicketProviderActions <|.. saleTicketOnline.ticketProvider.BusTicketProvider
+saleTicketOnline.ticketProvider.TicketProviderActions <|-- saleTicketOnline.onlineShop.OnlineShopActions
+
+Main --> BusTicketProvider : creates
+Main --> OnlineShop : creates
+Main --> ConsoleView : creates
+OnlineShop --> User : creates|authorize
+OnlineShop --> BusTicketProvider : uses
+BusTicketProvider --> BusTicket : creates
+'добавлю связи CоnsoleView в комментарии, так как при их добавлении на мой взгляд при их наличии читаемость диаграммы ухудшается
+'ConsoleView --> OnlineShop : uses
+'ConsoleView --> Scanner : uses
+
+@enduml

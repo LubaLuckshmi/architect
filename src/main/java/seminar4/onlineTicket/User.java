@@ -1,15 +1,10 @@
 package seminar4.onlineTicket;
 
+import java.util.Date;
 
-    /**
-     * Попытка забронировать билет.
-     * @return true, если бронирование успешно, false в противном случае.
-     * @pre User должен быть авторизован и выбран маршрут.
-     * @pre Билеты на выбранный маршрут и время должны быть доступны.
-     * @pre У пользователя должно быть достаточно средств для бронирования.
-     * @post Билет забронирован.
+/**
+     * Класс, представляющий пользователя системы.
      */
-    // Класс, представляющий пользователя системы.
 public class User implements UserActions {
         @Override
         public boolean authorize(String username, String password) {
@@ -18,41 +13,21 @@ public class User implements UserActions {
         }
 
         @Override
-        public boolean selectRoute(String routeId, DateTime time) {
+        public boolean selectRoute(String routeId, Date time) {
 // Реализация метода
             return false;
         }
-
         @Override
         public boolean checkTicketAvailability() {
 // Реализация метода
             return false;
         }
-
         @Override
         public boolean checkFunds() {
 // Реализация метода
             return false;
         }
-
-        /**
-         * Попытка забронировать билет.
-         * @return true, если бронирование успешно, false в противном случае.
-         * @pre User должен быть авторизован и выбран маршрут.
-         * @pre Билеты на выбранный маршрут и время должны быть доступны.
-         * @pre У пользователя должно быть достаточно средств для бронирования.
-         * @post Билет забронирован.
-         *
-         * Этот метод позволяет пользователю попытаться забронировать билет на выбранный маршрут и время.
-         * Для успешной бронировки необходимо выполнение следующих условий:
-         * - Пользователь должен быть предварительно авторизован в системе (authorize).
-         * - Пользователь должен выбрать конкретный маршрут и время (selectRoute).
-         * - Должны быть доступны билеты на выбранный маршрут и время (checkTicketAvailability).
-         * - У пользователя должно быть достаточно средств для бронирования (checkFunds).
-         *
-         * Если все предусловия выполняются, билет будет успешно забронирован, и метод вернет true.
-         * В противном случае, если хотя бы одно из предусловий не выполняется, бронирование не будет произведено, и метод вернет false.
-         */
+        @Override
         public boolean reserveTicket() {
             // Проверка предусловий
             if (!isAuthorized()) {
@@ -83,18 +58,18 @@ public class User implements UserActions {
         private boolean performReservation() {
             return false;
         }
-
+        /**
+         * Метод для проверки выбран ли маршрут
+         * @return возвращает true, если маршрут выбран, иначе false
+         */
         private boolean isRouteSelected() {
             return false;
         }
-
+        /**
+         * Метод для получения информации об авторизации пользователя
+         * @return возвращает true, если пользователь авторизован, иначе false
+         */
         private boolean isAuthorized() {
-            return false;
-        }
-
-        @Override
-        public boolean deductFunds() {
-// Реализация метода
             return false;
         }
 
@@ -110,7 +85,7 @@ public class User implements UserActions {
         }
 
         @Override
-        public boolean cancelReservation() {
+        public boolean cancelReservation(Ticket ticket) {
 // Реализация метода
             return false;
         }
