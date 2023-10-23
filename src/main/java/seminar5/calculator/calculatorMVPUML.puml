@@ -1,0 +1,178 @@
+@startuml
+' горизонтальный уровень данных, класс для взаимодействия с бд,
+' содержит ссылки на интерфейсы сохранения и получения данных
+class calculatorMVC.db.DatabaseManagementSlice {
+- IFetchFromDB fetchFromDB
+- ISaveToDB saveToDB
++ void saveData(String)
++ String fetchData()
+}
+'горизонтальный уровень бизнес логики, вертикальный срез,
+'операция умножения
+class calculatorMVC.model.multiplyOperation.MultiplyOperation {
+~ double firstArg
+~ double secondArg
++ double multiply()
+}
+'горизонтальный уровень взаимодействия с пользователем,
+'класс для реализации консольного интерфейса,
+'содержит ссылки на интерфейсы ввода и вывода
+class calculatorMVC.view.ConsoleView {
+~ IInput input
+~ IOutput output
+~ CalculationLayer calcLayer
++ void runCalculator()
+}
+'горизонтальный уровень бизнес логики, вертикальный срез,
+'интерфейс для операции умножения
+interface calculatorMVC.model.multiplyOperation.IMultiply {
+~ double multiply()
+}
+'горизонтальный уровень взаимодействия с пользователем,
+'интерфейс для взаимодействия с пользователм
+interface calculatorMVC.view.IView {
+~ void runCalculator()
+}
+'основной класс программы
+class calculatorMVC.Main {
++ {static} void main(String[])
+}
+'горизонтальный уровень данных, вертикальный срез,
+'класс для сохранения данных в mysql
+class calculatorMVC.db.save.SaveToMysql {
++ void saveToDB(String)
+}
+'горизонтальный уровень данных, вертикальный срез,
+'класс для сохранения данных в postgresql
+class calculatorMVC.db.save.SaveToPostgresql {
++ void saveToDB(String)
+}
+'горизонтальный уровень взаимодействия с пользователем, вертикальный срез,
+'интерфейс для вывода данных пользователю
+interface calculatorMVC.view.output.IOutput {
+~ void displayOutput(String)
+}
+'горизонтальный уровень данных, вертикальный срез,
+'класс для извлечения данных из postgresql
+class calculatorMVC.db.fetch.FetchFromPostgresql {
++ String fetchFromDB()
+}
+'горизонтальный уровень бизнес логики, вертикальный срез,
+'интерфейс для операции деления
+interface calculatorMVC.model.divideOperation.IDivide {
+~ double divide()
+}
+'горизонтальный уровень взаимодействия с пользователем, вертикальный срез,
+'класс для вывода данных в файл
+class calculatorMVC.view.output.FileOutput {
++ void displayOutput(String)
+}
+'горизонтальный уровень бизнес логики, вертикальный срез,
+'операция деления
+class calculatorMVC.model.divideOperation.DivideOperation {
+~ double firstArg
+~ double secondArg
++ double divide()
+}
+'горизонтальный уровень взаимодействия с пользователем, вертикальный срез,
+'класс для ввода данных из файла
+class calculatorMVC.view.input.FileInput {
++ String getInput()
+}
+'горизонтальный уровень бизнес логики, вертикальный срез,
+'операция сложения
+class calculatorMVC.model.sumOperation.SumOperation {
+~ double firstArg
+~ double secondArg
++ double sum()
+}
+'горизонтальный уровень взаимодействия с пользователем, вертикальный срез,
+'интерфейс для ввода даных из консоли
+class calculatorMVC.view.input.SystemInInput {
+- Scanner scanner
++ String getInput()
+}
+'горизонтальный уровень бизнес логики,
+'класс калькулятора, содержит ссылки на интерфейсы операций
+class calculatorMVC.model.CalculationLayer {
++ double add(double,double)
++ double subtract(double,double)
++ double multiply(double,double)
++ double divide(double,double)
+}
+'горизонтальный уровень бизнес логики, вертикальный срез,
+'интерфейс для операции сложения
+interface calculatorMVC.model.sumOperation.ISum {
+~ double sum()
+}
+'горизонтальный уровень взаимодействия с пользователем, вертикальный срез,
+'класс для ввода данных в консоль
+class calculatorMVC.view.output.ConsoleOutput {
++ void displayOutput(String)
+}
+'горизонтальный уровень бизнес логики, вертикальный срез,
+'интерфейс для операции вычитания
+class calculatorMVC.model.substractOperation.SubstractOperation {
+~ double firstArg
+~ double secondArg
++ double substract()
+}
+'горизонтальный уровень данных, вертикальный срез,
+'интерфейс для сохранения данных в бд
+interface calculatorMVC.db.save.ISaveToDB {
+~ void saveToDB(String)
+}
+'горизонтальный уровень данных, вертикальный срез,
+'класс для извлечения данных из mysql
+class calculatorMVC.db.fetch.FetchFromMysql {
++ String fetchFromDB()
+}
+'горизонтальный уровень данных, вертикальный срез,
+'интерфейс для извлечения данных из бд
+interface calculatorMVC.db.fetch.IFetchFromDB {
+~ String fetchFromDB()
+}
+'горизонтальный уровень бизнес логики, вертикальный срез,
+'интерфейс для операции вычитания
+interface calculatorMVC.model.substractOperation.ISubstract {
+~ double substract()
+}
+'горизонтальный уровень взаимодействия с пользователем, вертикальный срез,
+'интерфейс для ввода данных пользователем
+interface calculatorMVC.view.input.IInput {
+~ String getInput()
+}
+
+
+calculatorMVC.model.multiplyOperation.IMultiply <|.. calculatorMVC.model.multiplyOperation.MultiplyOperation
+calculatorMVC.view.IView <|.. calculatorMVC.view.ConsoleView
+calculatorMVC.db.save.ISaveToDB <|.. calculatorMVC.db.save.SaveToMysql
+calculatorMVC.db.save.ISaveToDB <|.. calculatorMVC.db.save.SaveToPostgresql
+calculatorMVC.db.fetch.IFetchFromDB <|.. calculatorMVC.db.fetch.FetchFromPostgresql
+calculatorMVC.view.output.IOutput <|.. calculatorMVC.view.output.FileOutput
+calculatorMVC.model.divideOperation.IDivide <|.. calculatorMVC.model.divideOperation.DivideOperation
+calculatorMVC.view.input.IInput <|.. calculatorMVC.view.input.FileInput
+calculatorMVC.model.sumOperation.ISum <|.. calculatorMVC.model.sumOperation.SumOperation
+calculatorMVC.view.input.IInput <|.. calculatorMVC.view.input.SystemInInput
+calculatorMVC.view.output.IOutput <|.. calculatorMVC.view.output.ConsoleOutput
+calculatorMVC.model.substractOperation.ISubstract <|.. calculatorMVC.model.substractOperation.SubstractOperation
+calculatorMVC.db.fetch.IFetchFromDB <|.. calculatorMVC.db.fetch.FetchFromMysql
+
+CalculationLayer --> SubstractOperation : creates and uses
+CalculationLayer --> SumOperation : creates and uses
+CalculationLayer --> DivideOperation : creates and uses
+CalculationLayer --> MultiplyOperation : creates and uses
+
+ConsoleView --> SystemInInput : uses
+ConsoleView --> ConsoleOutput : uses
+
+DatabaseManagementSlice --> IFetchFromDB : uses
+DatabaseManagementSlice --> ISaveToDB : uses
+
+Main --> ConsoleView : creates
+Main --> DatabaseManagementSlice: creates
+Main --> SaveToPostgresql : creates
+Main --> FetchFromPostgresql : creates
+Main --> CalculationLayer: creates
+
+@enduml
