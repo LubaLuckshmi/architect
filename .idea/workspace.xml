@@ -5,7 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92bb8378-df1f-45af-a6d4-671e8a182536" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/seminar4/onlineTicket/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar5/calculator/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar5/calculator/calculatorMVC/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar5/calculator/calculatorMVC/controller/CalculatorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar5/calculator/calculatorMVC/model/CalculationLayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar5/calculator/calculatorMVC/model/sumOperation/SumOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar5/calculator/calculatorMVC/view/ConsoleView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar5/calculator/calculatorMVC/view/IView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar5/calculator/calculatorMVC/view/InputOutputLayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar5/pie/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar5/zoo/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar5/zoo/Eagle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar5/zoo/Lion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar5/zoo/NonPredator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar5/zoo/Predator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +28,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="UML Use Case" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -22,6 +36,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2Wsg07Utt2PMPCnYfqmel4bwjc1" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -31,6 +48,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultPlantUmlFileTemplate": "UML Use Case",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -46,6 +64,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="seminar4.onlineTicket" />
       <recent name="seminar3.exampleUml" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -140,7 +159,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1697526476058</updated>
-      <workItem from="1697526477381" duration="14619000" />
+      <workItem from="1697526477381" duration="35069000" />
     </task>
     <servers />
   </component>
