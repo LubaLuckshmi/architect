@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92bb8378-df1f-45af-a6d4-671e8a182536" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/seminar6/bce/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/seminar6/dbExamlpe2/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/seminar6/dbExamlpe2/Task.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/seminar6/dbExample/DatabaseConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/seminar6/dbExample/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/seminar6/essences/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/seminar6/essences/InMemoryAnimalRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/seminar6/essences/ZooApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/seminar6/hexagonal/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/seminar6/patterns/adapter/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/seminar6/patterns/decorator/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar6Dz/proxy/Image.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar6Dz/proxy/ProxyExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar6Dz/proxy/ProxyImage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar6Dz/proxy/RealImage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,13 +68,13 @@
       <recent name="$PROJECT_DIR$/src/main/java/seminar3/exampleUml" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.seminar6.patterns.decorator.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="seminar3Dz.Lsp.Main" />
+  <component name="RunManager" selected="Application.ProxyExample">
+    <configuration name="ProxyExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="seminar6Dz.proxy.ProxyExample" />
       <module name="arkhitect" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="seminar3Dz.Lsp.*" />
+          <option name="PATTERN" value="seminar6Dz.proxy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -144,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ProxyExample" />
         <item itemvalue="Application.seminar6.patterns.decorator.Main" />
         <item itemvalue="Application.seminar6.patterns.adapter.Main" />
         <item itemvalue="Application.ZooApp" />
         <item itemvalue="Application.seminar4.onlineTicket.Main" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -160,7 +152,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1697526476058</updated>
-      <workItem from="1697526477381" duration="45518000" />
+      <workItem from="1697526477381" duration="48157000" />
     </task>
     <servers />
   </component>
