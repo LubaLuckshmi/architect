@@ -1,0 +1,49 @@
+@startuml
+class seminar8.mvi.presenter.TasksPresenter {
+- List<Task> tasks
+- BaseView view
++ void dispatch(Intent)
++ void loadTasks()
+}
+class seminar8.mvi.model.TasksViewState {
+- List<Task> tasks
++ String toString()
+}
+interface seminar8.mvi.model.ViewState {
+}
+class seminar8.mvi.MVIPatternDemo {
++ {static} void main(String[])
+}
+interface seminar8.mvi.view.BaseView {
+~ void render(ViewState)
+}
+class seminar8.mvi.model.Task {
+- String name
+- boolean completed
++ void complete()
++ boolean isCompleted()
++ String toString()
+}
+class seminar8.mvi.view.ConsoleView {
++ void render(ViewState)
+}
+interface seminar8.mvi.model.Intent {
+}
+class seminar8.mvi.model.TaskCompletedIntent {
+~ int taskId
++ int getTaskId()
+}
+
+
+seminar8.mvi.model.ViewState <|.. seminar8.mvi.model.TasksViewState
+seminar8.mvi.view.BaseView <|.. seminar8.mvi.view.ConsoleView
+seminar8.mvi.model.Intent <|.. seminar8.mvi.model.TaskCompletedIntent
+
+
+
+seminar8.mvi.MVIPatternDemo ..> seminar8.mvi.view.ConsoleView : creates
+seminar8.mvi.MVIPatternDemo ..> seminar8.mvi.presenter.TasksPresenter : creates
+seminar8.mvi.presenter.TasksPresenter "1" *.. "1..*" seminar8.mvi.model.Task : creates
+seminar8.mvi.MVIPatternDemo "1" *.. "1..*" seminar8.mvi.model.TaskCompletedIntent: creates
+seminar8.mvi.presenter.TasksPresenter "1" *.. "1..*" seminar8.mvi.model.ViewState : creates
+@enduml
