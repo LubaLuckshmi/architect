@@ -5,7 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92bb8378-df1f-45af-a6d4-671e8a182536" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/seminar7/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar8/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar8/mvi/MVIPatternDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar8/mvi/model/Intent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar8/mvi/model/Task.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar8/mvi/model/TaskCompletedIntent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar8/mvi/model/ViewState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar8/mvi/presenter/TasksPresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar8/mvi/view/BaseView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar8/mvi/view/ConsoleView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar8/mvi/view/TasksViewState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar8/mvpvn/mainInteraction/MVPVMPatternDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar8/mvpvn/model/Task.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar8/mvpvn/presenter/TaskPresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar8/mvpvn/view/ConsoleView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar8/mvpvn/view/TaskView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar8/mvpvn/viewModel/TaskViewModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar8/mvvm/model/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar8/mvvm/view/MVVMPatternDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar8/mvvm/viewModel/BooksViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +35,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="UML Use Case" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -51,11 +70,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="seminar8.mvpvn" />
       <recent name="seminar6.patterns" />
       <recent name="seminar6.dbExamlpe2" />
       <recent name="seminar6.dbExample" />
       <recent name="seminar6.essences" />
-      <recent name="seminar5.calculator.calculatorMVC.db.fetch" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/seminar5/calculator" />
@@ -65,13 +84,13 @@
       <recent name="$PROJECT_DIR$/src/main/java/seminar3/exampleUml" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.seminar7.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="seminar6Dz.proxy.Main" />
+  <component name="RunManager" selected="Application.MVIPatternDemo">
+    <configuration name="MVIPatternDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="seminar8.mvi.MVIPatternDemo" />
       <module name="arkhitect" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="seminar6Dz.proxy.*" />
+          <option name="PATTERN" value="seminar8.mvi.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -79,12 +98,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ZooApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="seminar6.essences.ZooApp" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="seminar6Dz.proxy.Main" />
       <module name="arkhitect" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="seminar6.essences.*" />
+          <option name="PATTERN" value="seminar6Dz.proxy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -133,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MVIPatternDemo" />
         <item itemvalue="Application.seminar7.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.seminar6.patterns.decorator.Main" />
         <item itemvalue="Application.seminar6.patterns.adapter.Main" />
-        <item itemvalue="Application.ZooApp" />
       </list>
     </recent_temporary>
   </component>
@@ -149,7 +168,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1697526476058</updated>
-      <workItem from="1697526477381" duration="50265000" />
+      <workItem from="1697526477381" duration="57513000" />
     </task>
     <servers />
   </component>
