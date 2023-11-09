@@ -5,20 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92bb8378-df1f-45af-a6d4-671e8a182536" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/seminar10/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/seminar10/dao/InMemoryUserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/seminar10/dao/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/seminar10/dao/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/seminar10/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/seminar10/repository/InMemoryUserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/seminar10/repository/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/seminar10/repository/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/seminar10/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/seminar10/slp/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/seminar10/slp/ServiceLayerPatternExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/seminar10/uwp/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/seminar10/uwp/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/seminar10/uwp/UnitOfWorkPatternExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar10Dz/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar10Dz/exeptions/ProductAddException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar10Dz/exeptions/ProductServiceDeleteException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar10Dz/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar10Dz/model/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar10Dz/model/UnitOfWork.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar10Dz/model/dao/IProductDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar10Dz/model/dao/InMemoryProductDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar10Dz/model/repozitory/IRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar10Dz/model/repozitory/ProductRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -164,7 +160,7 @@
       <option name="presentableId" value="Default" />
       <updated>1697526476058</updated>
       <workItem from="1697526477381" duration="70531000" />
-      <workItem from="1699284008652" duration="4926000" />
+      <workItem from="1699284008652" duration="6528000" />
     </task>
     <servers />
   </component>
