@@ -1,4 +1,4 @@
-package seminar10;
+package seminar11;
 
 public class Main {
 }
