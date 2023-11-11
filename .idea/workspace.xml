@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92bb8378-df1f-45af-a6d4-671e8a182536" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/seminar12/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/seminar12/task1/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/seminar12/task1/CalculatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/seminar12/task1/CalculatorTestAll.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/seminar12/task1/CalculatorTestOld.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/seminar12/task1/CalculatorTestThree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/seminar12/task1/TestOne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/seminar12/task1/TestTwo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seminar12Dz/UAT.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +70,12 @@
       <recent name="$PROJECT_DIR$/src/main/java/seminar5/calculator" />
       <recent name="$PROJECT_DIR$/src/main/java/seminar3Dz" />
       <recent name="$PROJECT_DIR$/src/main/java/seminar3Dz/Ocp" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="seminar12.task1" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.CalculatorTestOld.testAdd">
@@ -172,7 +170,7 @@
       <option name="presentableId" value="Default" />
       <updated>1697526476058</updated>
       <workItem from="1697526477381" duration="70531000" />
-      <workItem from="1699284008652" duration="16265000" />
+      <workItem from="1699284008652" duration="18848000" />
     </task>
     <servers />
   </component>
